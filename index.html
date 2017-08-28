@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="shortcut icon" href="#" type="image/x-icon">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- <link rel="stylesheet" type="text/css" href="css/Reset CSS.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+
+	<script type="text/javascript">
+		$(function(){
+			var count = 0;
+			setInterval(function() {
+				if ( count == 0 ) 
+					$( 'body' ).removeClass( 'element4');
+				$( 'body' ).removeClass( 'element'+count-1);
+				$( 'body' ).removeClass( 'element'+count );
+				count++;
+				$( 'body' ).addClass( 'element'+count );
+				if ( count == 4 ) count = 0;
+			}, 5000);
+		});
+
+	</script>
+
+
+</head>
+
+
+
+<body class="element1" onload="function ();">
+
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="header_nav">
+				<div class="my_name">
+					<h1><a class="my_name_link" href="#">VLAD-VS</a></h1>
+				</div>
+				<div class="header-nav">
+					<ul class="header-nav-menu">
+						<li class="nav_item"><a href="#">About me</a></li>
+						<li class="nav_item"><a href="#">Portfolio</a></li>
+						<li class="nav_item"><a href="#">Blog</a></li>
+						<li class="nav_item"><a href="#">Contacts</a></li>
+					</ul>			
+				</div>
+			</div>
+			<span class="header-intro">
+				<p>
+					<code>&lt;p&gt; Hi there!&lt;/p&gt;</code>
+				</p>
+
+				<p>
+					<code>&lt;p&gt; My Name is Vladyslav Semenov &lt;/p&gt;</code>
+					
+				</p>
+
+				<p>
+					<code>&lt;p&gt; I’m a Java Developer &lt;/p&gt;</code>
+				</p>
+			</span>
+
+			<div class="button-about_me">
+				<a class="button-about_me-center" href="#">About me</a>
+			</div>
+
+		</header>
+
+		<div class="main-content">
+
+		<form class="sigh-in-form form-group_margin">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                       placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.
+                </small>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+
+
+
+
+			<article class="article-1">
+				<div class="">
+					<p>
+						<!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ab suscipit beatae ducimus saepe ut eaque praesentium modi, tempore velit soluta autem fugiat provident nam, ipsam nulla natus quisquam odio! -->
+					</p>
+				</div>
+			</article>
+		</div>
+
+
+		<footer class="footer">
+			<div class="nav">
+				<div class="my_name">
+					<h1>© VLAD-VS, 2017.   При копировании материала ссылка на источник обязательна.</h1>
+				</div>
+				<div class="footer-nav">
+					<ul class="footer-nav-menu">
+						<li class="nav_item_footer"><a href="#"><img src="img/links/Facebook.png"></a></li>
+						<li class="nav_item_footer"><a href="#"><img src="img/links/github-512.png"></a></li>
+						<li class="nav_item_footer"><a href="#"><img src="img/links/linkedin.png"></a></li>
+					</ul>			
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>

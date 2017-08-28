@@ -1,0 +1,216 @@
+﻿/* 
+@font-face {
+    font-family: ProximaNova; Имя шрифта
+    src: url('../font/proximanova-regular.otf'); Путь к файлу со шрифтом
+}
+*/
+
+a {
+	text-decoration: none;
+}
+
+html, body {
+/*	width: 1200px;
+	margin: 0px auto;
+	height: 100%;*/
+}
+.wrapper{
+	width: 100%;
+	display: block;
+}
+
+.header {
+	display: block;
+	box-sizing: border-box;
+}
+.my_name {
+	display: inline-block;
+	box-sizing: border-box;
+	vertical-align: top;
+	font-weight: 500;
+	margin-left: 5%;
+}
+.my_name h1 {
+	font-size: 1.5em;
+}
+.my_name a {
+	color: #efefef;
+	font-weight: 600;
+}
+
+.header-nav {
+	display: inline-block;
+	box-sizing: border-box;
+	vertical-align: top;
+	float: right;
+	margin-right: 5%;
+}
+
+.nav_item {
+	display: inline-block;
+	box-sizing: border-box;
+	vertical-align: top;
+	margin-right: 2em;
+	padding: 0.7em;
+	/*text-align: center;*/
+	font-size: 1.5em;
+	transition: all 1.3s ease-out;
+
+}
+.nav_item a:hover{
+	border-bottom: 3px solid #efefef;
+	text-decoration: none;
+}
+
+.nav_item a{
+	color: #efefef;
+}
+
+.nav_item:last-child {
+	margin-right: 0.0em;
+}
+
+.header-intro {
+	width: 37em;
+	display: block;
+	box-sizing: border-box;
+	font-size: 2em;
+	padding-top: 2em;
+	padding-left: 5em;
+	padding-right: 10em;
+	text-align: center;
+}
+
+.button-about_me a {
+	display: block;
+	box-sizing: border-box;
+
+
+
+	width: 6em;
+	height: 2.5em;
+	background: #efefef;;
+	border-radius: 5px;
+
+	margin-left: 18em;
+
+	font-size: 1.5em;
+
+	transition: all 1.3s ease-out;
+
+}
+
+.button-about_me a:hover { 
+	color: #efefef;
+	background: grey;
+	text-decoration: none;
+}
+
+.button-about_me-center {
+	display: block;
+	box-sizing: border-box;
+	text-align: center; 
+	padding-top: 0.5em;
+	color: black;
+	font-weight: 600;
+
+}
+
+.form-group_margin {
+	margin-left: 5%;
+	width: 25em;
+
+}
+
+/*============main==========*/
+
+.main-content {
+	margin-top: 11em;
+	margin-bottom: 12em;
+}
+
+
+/*============footer==========*/
+
+.footer {
+height: 4.5em;
+/*margin-top: 3em;*/
+}
+
+.footer-nav {
+	display: inline-block;
+	box-sizing: border-box;
+	vertical-align: top;
+	float: right;
+	margin-right: 5%;
+}
+
+.nav_item_footer {
+	display: inline-block;
+	box-sizing: border-box;
+	vertical-align: top;
+
+	margin-right: 1em;
+	padding: 0.2em;
+	border-radius: 100%;
+	background: white;
+	border: 2px solid #efefef;
+	transition: all 0.4s ease-out;
+}
+.nav_item_footer:hover{
+	box-sizing: border-box;
+
+}
+
+.footer-nav-menu img {
+	width: 2.5em;
+}
+
+
+
+
+
+
+
+
+body { 
+/*  -webkit-transition: all 3.0s ease-in-out;
+  -moz-transition: all 3.0s ease-in-out;
+  -o-transition: all 3.0s ease-in-out;*/
+  transition: all 3.0s ease-in-out;
+  color: white;
+
+        min-height: 100%;
+        min-width: 1200px;
+
+        width: 100%;
+        height: auto;
+
+        position: fixed;
+
+        top: 0;
+        left: 0;
+}
+ 
+.element1 {
+  background: url(../img/bg/1.jpg) no-repeat;
+  background-size:cover; 
+}
+ 
+.element2 {
+  background: url(../img/bg/2.jpg) no-repeat;
+  background-size:cover; 
+}
+ 
+.element5 {
+   background: url(../img/bg/3.jpg) no-repeat; 
+  background-size:cover;  
+}
+.element3 {
+   background: url(../img/bg/4.jpg) no-repeat; 
+  background-size:cover;  
+}
+.element4 {
+   background: url(../img/bg/5.jpg) no-repeat; 
+  background-size:cover;  
+}
