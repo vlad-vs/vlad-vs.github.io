@@ -164,13 +164,13 @@ html, body {
 }
 
 .blogMainColumn {
+	margin: 2em auto;
 	display: inline-block;
 	box-sizing: border-box;
 	vert-align: top;
-	width: 70%;
+	width: 80%;
 	background: none;
 	font-size: 16px;
-	margin-top: 2em;
 }
 .blogNewsName {
 }
@@ -179,10 +179,19 @@ html, body {
 	display: inline-block;
 	box-sizing: border-box;
 	vertical-align: top;
-	width: 27%;
+	width: 19%;
+}
+
+.emailGroup {
+	padding: 0.5em;
 	font-size: 16px;
-	margin-left: 1%;
+	/*margin-left: 1%;*/
 	margin-top: 2em;
+	margin-right: 1em;
+	background: rgba(255, 255, 255, 0.1);
+	/*border-left: 3px solid rgba(255, 255, 255, 0.1);*/
+	/*border-right: 3px solid rgba(255, 255, 255, 0.1);*/
+	border: 3px solid rgba(255, 255, 255, 0.1);
 }
 .form-group{
 	margin-bottom: 0.5em;
@@ -191,8 +200,15 @@ html, body {
 	background: none;
 	border: none;
 	color: cornsilk;
+}
 
-
+.btn {
+	background: rgba(255, 255, 255, 0.3);
+	border: 2px solid rgba(255, 255, 255, 0.1);
+	transition: all 0.6s ease-in-out;
+}
+.btn:hover {
+	color: white;
 }
 
 /* Remove outline on the forms and links */
@@ -207,10 +223,11 @@ html, body {
 
 .article{
 	padding: 3em 2em;
-margin: 0em 1em;
+	margin: 0em 1em;
 	display: block;
 	box-sizing: border-box;
 	background: rgba(255, 255, 255, 0.1);
-	border-left: 3px solid rgba(255, 255, 255, 0.1);
-	border-right: 3px solid rgba(255, 255, 255, 0.1);
+	/*border-left: 3px solid rgba(255, 255, 255, 0.1);*/
+	/*border-right: 3px solid rgba(255, 255, 255, 0.1);*/
+	border: 3px solid rgba(255, 255, 255, 0.1);
 }
