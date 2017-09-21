@@ -170,20 +170,47 @@ html, body {
 	width: 70%;
 	background: none;
 	font-size: 16px;
+	margin-top: 2em;
 }
 .blogNewsName {
-
 }
 
 .blogInfoColumn {
 	display: inline-block;
 	box-sizing: border-box;
-	vert-align: top;
-	width: 30%;
+	vertical-align: top;
+	width: 27%;
 	font-size: 16px;
+	margin-left: 1%;
+	margin-top: 2em;
+}
+.form-group{
+	margin-bottom: 0.5em;
+}
+.form-control {
+	background: none;
+	border: none;
+	color: cornsilk;
+
+
 }
 
+/* Remove outline on the forms and links */
+:active, :hover, :focus {
+	outline: 0;
+	outline-offset: 0;
+}
 .main-content {
 	margin-top: 11em;
 	margin-bottom: 12em;
+}
+
+.article{
+	padding: 3em 2em;
+margin: 0em 1em;
+	display: block;
+	box-sizing: border-box;
+	background: rgba(255, 255, 255, 0.1);
+	border-left: 3px solid rgba(255, 255, 255, 0.1);
+	border-right: 3px solid rgba(255, 255, 255, 0.1);
 }
