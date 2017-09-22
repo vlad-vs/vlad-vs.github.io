@@ -231,3 +231,34 @@ html, body {
 	/*border-right: 3px solid rgba(255, 255, 255, 0.1);*/
 	border: 3px solid rgba(255, 255, 255, 0.1);
 }
+.delblock {
+    display: none;
+}
+.withMod {
+    width: 99%;
+}
+
+.form-control-newsShortText {
+    width:  97%;
+    height: 150px;
+    padding: 5px 10px 5px 10px;
+    border:3px solid rgba(255, 255, 255, 0.1);
+    font-size:1.5em;
+}
+
+.form-control-newsText {
+    width:  97%;
+    height: 300px;
+    padding: 5px 10px 5px 10px;
+    border:3px solid rgba(255, 255, 255, 0.1);
+    font-size:1.5em;
+}
+
+.wrapperNews {
+    color: white;
+
+    display: block;
+
+    min-height: 100%;
+    min-width: 1200px;
+}
