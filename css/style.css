@@ -33,18 +33,15 @@ a {
 }
 
 html, body {
-	/*	width: 1200px;
-        margin: 0px auto;
-        height: 100%;*/
+	width: 1200px;
+    margin: 0px auto;
+    height: 100%;
 	background: black;
 }
 
 .wrapper {
-	/*  -webkit-transition: all 3.0s ease-in-out;
-      -moz-transition: all 3.0s ease-in-out;
-      -o-transition: all 3.0s ease-in-out;*/
-	/*transition: all 2.5s ease-in-out;*/
 	color: white;
+
 
 	display: block;
 
@@ -54,7 +51,7 @@ html, body {
 	width: 100%;
 	height: auto;
 
-	position: fixed;
+	/*position: fixed;*/
 
 	top: 0;
 	left: 0;

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+
+    <div class="wrapper element4">
+        <header class="header">
+
+            <div class="header_nav">
+                <div class="my_name">
+                    <h1><a class="my_name_link" href="../index.html">VLAD-VS</a></h1>
+                </div>
+                <div class="header-nav">
+                    <ul class="header-nav-menu">
+                        <li class="nav_item"><a href="../pages/aboutMe.html">About me</a></li>
+                        <li class="nav_item"><a href="../pages/portfolio.html">Portfolio</a></li>
+                        <li class="nav_item"><a href="../pages/blog.html">Blog</a></li>
+                        <li class="nav_item"><a href="../pages/contacts.html">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="blog">
+
+            <div class="blogMainColumn">
+
+                <article class="article">
+                    <div class="blogNewsName">
+                        <h2>
+                            JUnit
+                        </h2>
+                    </div>
+
+                    <div class="publicDate">
+                        <span>01.01.2017</span>
+                    </div>
+
+                    <div class="blogIMG">
+                        <img src="#" alt="">
+                    </div>
+
+                    <div class="blogText">
+                        <span>
+                            Официальный сайт <a href="http://junit.org/junit4/">JUnit 4</a> и <a href="http://junit.org/junit5/">JUnit 5</a>
+                            <br>
+                            Документация JUnit 4: <a href="http://junit.org/junit4/javadoc/latest/index.html">javaDoc</a>.  
+                            <br>
+                            Документация JUnit 5: <a href="http://junit.org/junit5/docs/current/api/">javaDoc</a>, <a href="http://junit.org/junit5/docs/current/user-guide/">gude</a>.
+                            <br>
+                            <span>
+                                JUnit 5 = JUnit Platform + JUnit Jupiter + JUnit Vintage
+                                The JUnit Platform  - serves as a foundation for launching testing frameworks on the JVM.
+
+                                JUnit Jupiter — предоставляет новые возможности для написания тестов и создания собственных расширений. 
+
+                                JUnit Vintage provides a TestEngine for running JUnit 3 and JUnit 4 based tests on the platform.
+
+
+                                JUnit 5 требует Java 8 (или выше) во время выполнения. Тем не менее, вы все еще можете проверить код, который был скомпилирован с предыдущими версиями JDK.
+                            </span>
+                            <br>
+                            <h3>Аннотации в JUnit 5</h3>
+                            <table>
+                                <tr><td>Aнотация</td><td>Описание</td></tr>
+                                <tr><td>@Test</td><td>Обозначает, что метод является методом тестирования. В отличие от @Testаннотации JUnit 4 , эта аннотация не объявляет никаких атрибутов, поскольку тестовые расширения в JUnit Jupiter работают на основе собственных выделенных аннотаций. Такие методы наследуются, если они не переопределены .</td></tr>
+                                <tr><td>@ParameterizedTest</td><td>Обозначает, что метод является параметризованным тестом . Такие методы наследуются, если они не переопределены .</td></tr>
+                                <tr><td>@RepeatedTest</td><td>Обозначает, что метод является тестовым шаблоном для повторного теста . Такие методы наследуются, если они не переопределены .</td></tr>
+                                <tr><td>@TestFactory</td><td>Обозначает, что метод является тестовой фабрикой для динамических тестов . Такие методы наследуются, если они не переопределены .</td></tr>
+                                <tr><td>@TestInstance</td><td>Используется для настройки жизненного цикла тестового экземпляра для аннотированного тестового класса. Такие аннотации наследуются .</td></tr>
+                                <tr><td>@TestTemplate</td><td>Обозначает, что метод является шаблоном для тестовых случаев, предназначенных для многократного вызова в зависимости от количества контекстов вызова, возвращаемых зарегистрированными поставщиками . Такие методы наследуются, если они не переопределены .</td></tr>
+                                <tr><td>@DisplayName</td><td>Объявляет настраиваемое отображаемое имя для тестового класса или метода тестирования. Такие аннотации не наследуются .</td></tr>
+                                <tr><td>@BeforeEach</td><td>Означает , что аннотированный метод должен быть выполнен перед тем каждый @Test , @RepeatedTest, @ParameterizedTest, или @TestFactoryметод , в текущем классе; аналогично JUnit 4 @Before. Такие методы наследуются, если они не переопределены .</td></tr>
+                                <tr><td>@AfterEach</td><td>Означает , что аннотированный метод должен быть выполнен после того, как каждый @Test , @RepeatedTest, @ParameterizedTest, или @TestFactoryметод , в текущем классе; аналогично JUnit 4 @After. Такие методы наследуются, если они не переопределены .</td></tr>
+                                <tr><td>@BeforeAll</td><td>Отмечает , что аннотированный метод должен быть выполнен перед тем все @Test , @RepeatedTest, @ParameterizedTestи @TestFactoryметоды в текущем классе; аналогично JUnit 4 @BeforeClass. Такие методы наследуются (если они не скрыты или не переопределены ) и должны быть static(если не используется жизненный цикл тестового экземпляра для каждого класса ).</td></tr>
+                                <tr><td>@AfterAll</td><td>Отмечает , что аннотированный метод должен быть выполнен после того, как все @Test , @RepeatedTest, @ParameterizedTestи @TestFactoryметоды в текущем классе; аналогично JUnit 4 @AfterClass. Такие методы наследуются (если они не скрыты или не переопределены ) и должны быть static(если не используется жизненный цикл тестового экземпляра для каждого класса ).</td></tr>
+                                <tr><td>@Nested</td><td>Обозначает, что аннотированный класс представляет собой вложенный нестатический тестовый класс. @BeforeAllи @AfterAllметоды не могут использоваться непосредственно в @Nestedтестовом классе, если не используется жизненный цикл тестового экземпляра «per-class» . Такие аннотации не наследуются .</td></tr>
+                                <tr><td>@Tag</td><td>Используется для объявления тегов для фильтрации тестов на уровне класса или метода; аналогичные тестовым группам в TestNG или Категории в JUnit 4. Такие аннотации наследуются на уровне класса, но не на уровне метода.</td></tr>
+                                <tr><td>@Disabled</td><td>Используется для отключения тестового класса или метода тестирования; аналогично JUnit 4 @Ignore. Такие аннотации не наследуются .</td></tr>
+                                <tr><td>@ExtendWith</td><td>Используется для регистрации пользовательских расширений . Такие аннотации наследуются .</td></tr>
+                            </table>
+                        </span>
+
+                        <span>
+
+                        </span>
+                    </div>
+                </article>
+
+
+            </div>
+
+            <div class="blogInfoColumn">
+
+                <div class="emailGroup">
+                    <form class="form-group-main">
+
+                        <div class="form-group">
+                            <label for="name">Name: </label>
+                            <input type="text" class="form-control" id="name" placeholder="__________">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="InputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="InputEmail1" aria-describedby="EmailHelp"
+                            placeholder="____________">
+                            <br>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.
+                            </small>
+                        </div>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
